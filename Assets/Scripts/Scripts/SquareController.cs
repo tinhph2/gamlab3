@@ -39,16 +39,24 @@ public class SquareController : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Circle"))
         {
-          Debug.Log("xxxx");
+         
             Vector2 fistPosition = new Vector2(-8, 1);
          transform.position = fistPosition;
 
         }
         if (collision.gameObject.name.Equals("Box"))
         {
-            Debug.Log("Win");
+           
           LoadNextScene();
 
         }
+        if (collision.gameObject.tag.Equals("Pinwheel"))
+        {
+            
+            Vector2 fistPosition = new Vector2(-9, 1);
+            transform.position = fistPosition;
+
+        }
+        
     }
 }
