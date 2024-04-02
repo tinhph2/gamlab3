@@ -1,10 +1,11 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Square2Controller : MonoBehaviour
+public class MapController : MonoBehaviour
 {
     // Start is called before the first frame update
+    public float pushForce = 10f;
     void Start()
     {
         
@@ -15,4 +16,6 @@ public class Square2Controller : MonoBehaviour
     {
         
     }
+
+
 }

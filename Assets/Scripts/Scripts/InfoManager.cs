@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class GiftController : MonoBehaviour
+using UnityEngine.UI;
+public class InfoManager : MonoBehaviour
 {
+    public Text info;
+    string name = "Tinh Pham";
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +15,6 @@ public class GiftController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        info.text = "Ten nguoi choi " + name;
     }
 }
