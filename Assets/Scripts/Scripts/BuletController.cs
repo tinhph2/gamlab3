@@ -26,9 +26,17 @@ public class BuletController : MonoBehaviour
             ScoreController.Instance.IncreaseScore(scoreValue);
             Destroy(collision.gameObject); // Đối tượng bị bắn
             Destroy(gameObject); // Viên đạn
-
         }
-      
-       
+
+    
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if (collision.CompareTag("MapEdge")) // Kiểm tra xem collider khác có phải là viền bản đồ không
+        {
+            Destroy(gameObject); 
+        }
     }
 }
