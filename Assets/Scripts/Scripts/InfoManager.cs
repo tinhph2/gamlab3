@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class InfoManager : MonoBehaviour
 {
     public Text info;
-    string name = "Tinh Pham";
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +15,6 @@ public class InfoManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        info.text = "Ten nguoi choi " + name;
+        info.text = "Ten nguoi choi: Tinh";
     }
 }
