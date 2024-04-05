@@ -13,14 +13,13 @@ public class SquareController : MonoBehaviour
     // Start is called before the first frame update
     public GameObject bulletPrefab;
     public float bulletSpeed ;
-
+    // thêm dữ liệu người chơi
+    public PlayerData playerData;
     private Vector2 shootDirection;
     void Start()
     {
         StartCoroutine(Countdown());
         bulletSpeed = 10f;
-
-
     }
     IEnumerator Countdown()
     {
@@ -76,6 +75,12 @@ public class SquareController : MonoBehaviour
     }
     public void LoadNextScene()
     {
+        //khi chuyển sang screen tiếp theo thì tăng 1 level
+        playerData.playerLevel++;
+        // lưu thông tin playerLevel vào PlayerPrefs
+        PlayerPrefs.SetInt("PlayerLevel", playerData.playerLevel);
+        PlayerPrefs.SetInt("PlayerScore", playerData.playerScore);
+
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
@@ -90,7 +95,7 @@ public class SquareController : MonoBehaviour
         }
         if (collision.gameObject.name.Equals("Box"))
         {
-          Debug.Log("hello");
+        
           LoadNextScene();
 
         }

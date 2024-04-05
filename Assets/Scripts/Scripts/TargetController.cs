@@ -12,7 +12,7 @@ public class TargetController : MonoBehaviour
         if (collision.gameObject.CompareTag("Bullet"))
         {
             // Tăng điểm số khi viên đạn va chạm vào mục tiêu
-            ScoreController.Instance.IncreaseScore(scoreValue);
+          
 
             // Biến mục tiêu và viên đạn biến mất
             Destroy(gameObject); // Mục tiêu

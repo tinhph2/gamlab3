@@ -5,7 +5,7 @@ using UnityEngine;
 public class CloseController : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject trangPhuc; // Menu cần tắt
+    public GameObject menChinh; // Menu cần tắt
     void Start()
     {
         // Đăng ký sự kiện
@@ -20,6 +20,6 @@ public class CloseController : MonoBehaviour
     }
     public void HideMenu()
     {
-        trangPhuc.SetActive(false); // Hiển thị Menu
+        menChinh.SetActive(false); // Hiển thị Menu
     }
 }

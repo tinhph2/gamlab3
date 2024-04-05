@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class BuletController : MonoBehaviour
 {
+    public PlayerData playerData;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,13 +23,10 @@ public class BuletController : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Circle"))
         {
-
-            ScoreController.Instance.IncreaseScore(scoreValue);
+            playerData.playerScore++;
             Destroy(collision.gameObject); // Đối tượng bị bắn
             Destroy(gameObject); // Viên đạn
         }
-
-    
     }
 
     void OnTriggerEnter2D(Collider2D collision)
