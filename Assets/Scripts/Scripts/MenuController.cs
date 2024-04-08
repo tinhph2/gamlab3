@@ -55,8 +55,7 @@ public class MenuController : MonoBehaviour
             Level.text ="Level:" +  (playerData.playerLevel).ToString();
             Score.text = "Score:" + (playerData.playerScore).ToString();
             //Debug.Log("Player data loaded.");
-            Debug.Log("PlayerLevel" + playerData.playerLevel);
-            Debug.Log("playerScore" + playerData.playerScore);
+          
         }
         else
         {

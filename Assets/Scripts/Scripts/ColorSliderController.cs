@@ -6,10 +6,20 @@ public class ColorSliderController : MonoBehaviour
 {
     // Start is called before the first frame update
     public Slider slider;
- 
+    private bool isGameOver = false;
+    public Canvas gameOverCanvas;
     private void Start()
     {
         slider.value = 10f;
+        gameOverCanvas.gameObject.SetActive(false);
+    }
+
+    void Update()
+    {
+        if (!isGameOver && slider.value <= 0)
+        {
+            GameOver();
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -21,5 +31,12 @@ public class ColorSliderController : MonoBehaviour
         }
     }
 
-  
+
+    void GameOver()
+    {
+        isGameOver = true;
+        gameOverCanvas.gameObject.SetActive(true);
+    }
+
+
 }
