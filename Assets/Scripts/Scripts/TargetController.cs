@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class TargetController : MonoBehaviour
 {
-    public int scoreValue = 10;
 
     private void OnCollisionEnter(Collision collision)
     {

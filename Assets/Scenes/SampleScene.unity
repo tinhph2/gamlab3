@@ -329,9 +329,10 @@ EdgeCollider2D:
   - {x: -2.992665, y: -0.54610693}
   - {x: -4.7161765, y: -0.5595795}
   - {x: -4.6623707, y: 1.4368898}
-  - {x: 5.5269175, y: 1.501878}
-  - {x: 5.4722776, y: -0.21772799}
-  - {x: 4.189904, y: -0.09428954}
+  - {x: 5.3002014, y: 1.5224788}
+  - {x: 5.300202, y: 1.5224788}
+  - {x: 5.545286, y: 0.87496793}
+  - {x: 5.4834337, y: -0.0016892403}
   - {x: 4.232448, y: -2.4769068}
   - {x: -2.9460618, y: -2.405067}
   - {x: -3.007779, y: -1.9058284}
@@ -351,7 +352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f1141183245581498373af5f6c48367, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuChinh: {fileID: 496165440}
+  menuChinh: {fileID: 481629030}
   playerData: {fileID: 11400000, guid: 63fe24850bdaf73429ce93dae8ba8d9e, type: 2}
   Level: {fileID: 430479950}
   Score: {fileID: 1824380066}
@@ -394,7 +395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &496165440 stripped
+--- !u!1 &481629030 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3500510646755390322, guid: 21f02c06e70fab54480ca5dade400e31, type: 3}
   m_PrefabInstance: {fileID: 8561165405665016802}
@@ -640,6 +641,7 @@ GameObject:
   - component: {fileID: 1308360395}
   - component: {fileID: 1308360393}
   - component: {fileID: 1308360397}
+  - component: {fileID: 1308360398}
   m_Layer: 0
   m_Name: Box
   m_TagString: Box
@@ -735,8 +737,8 @@ Transform:
   m_GameObject: {fileID: 1308360392}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.58, y: 2.7110906, z: 0}
-  m_LocalScale: {x: 3.6762226, y: 1.9277344, z: 1}
+  m_LocalPosition: {x: 8.78, y: 2.7, z: 0}
+  m_LocalScale: {x: 2.6484003, y: 2.0733817, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -786,6 +788,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.61, y: 1.45}
   m_EdgeRadius: 0
+--- !u!114 &1308360398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308360392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79a14226b4f289f449dc0e20c2190e71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerData: {fileID: 11400000, guid: 63fe24850bdaf73429ce93dae8ba8d9e, type: 2}
 --- !u!1001 &1352323668
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -868,7 +883,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81c686cd66f8d1c4daaad081ea649206, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
 --- !u!1 &1585304536
 GameObject:
   m_ObjectHideFlags: 0

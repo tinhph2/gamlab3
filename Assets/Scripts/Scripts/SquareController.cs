@@ -59,17 +59,7 @@ public class SquareController : MonoBehaviour
         Vector3 moveDirection = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
         transform.Translate(moveDirection * moveSpeed * Time.deltaTime);
 
-        RaycastHit hit;
-        if (Physics.Raycast(transform.position, moveDirection, out hit, 1.0f))
-        {
-            Renderer renderer = hit.collider.GetComponent<Renderer>();
-
-            if (renderer != null && renderer.material.color == Color.black)
-            {
-                // Nếu nhân vật chạm vào vùng màu đen, ngăn nhân vật di chuyển
-                transform.Translate(-moveDirection * moveSpeed * Time.deltaTime);
-            }
-        }
+        
 
 
     }
@@ -126,8 +116,8 @@ public class SquareController : MonoBehaviour
         Rigidbody2D bulletRb = newBullet.GetComponent<Rigidbody2D>();
         if (bulletRb != null)
         {
-
-            bulletRb.velocity = shootDirection * bulletSpeed;  // Bắn theo hướng "up" của GameObject
+            
+            bulletRb.velocity = shootDirection * bulletSpeed;  
         }
     }
 
