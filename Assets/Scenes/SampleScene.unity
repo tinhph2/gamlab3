@@ -384,6 +384,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerData: {fileID: 11400000, guid: 63fe24850bdaf73429ce93dae8ba8d9e, type: 2}
+  Level: {fileID: 430479950}
+  Score: {fileID: 1824380066}
 --- !u!114 &430479950 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 650655187690994927, guid: 21f02c06e70fab54480ca5dade400e31, type: 3}
